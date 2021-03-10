@@ -1,0 +1,113 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  min-height: 100%;
+  background-color: $white;
+  color: #283136;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $Roboto;
+  line-height: 18px;
+
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.main-catalog {
+  display: grid;
+
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 120px;
+}
+
+.main-btn-link {
+  display: inline-block;
+  padding: 18px 54px;
+  border: none;
+  background-color: $red-orange;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #e74246;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--green {
+    background-color: #00ca74;
+
+    &:hover {
+      background-color: #00bc6c;
+    }
+  }
+
+  &--yellow {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: #e5a722;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
