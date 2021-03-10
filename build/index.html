@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/roboto.woff2" as="font">
+  <link rel="preload" href="fonts/roboto.woff" as="font">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/nerds-logo.svg" alt="Nerds Логотип" width="160" height="65">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--active">Студия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="error.html">Клиенты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="error.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link  user-nav__link-basket" href="error.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-header__content">
+        <div class="slider">
+          <div class="slider__slides">
+            <div class="slider__slide">
+              <div class="slider__slide-content">
+                <h2 class="slider__slide-title">Долго, дорого, скрупулезно.</h2>
+                <p class="slider__slide-text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+                <a class="main-btn-link slider__slide-btn" href="error.html">Узнать больше</a>
+              </div>
+              <div class="slider__slide-img-block">
+                <img class="slider__slide-img" src="img/slide1.png" alt="Изображение первого слайда" width="698" height="413">
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__slide-content">
+                <h2 class="slider__slide-title">Любим математику как никто другой</h2>
+                <p class="slider__slide-text">Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.</p>
+                <a class="main-btn-link slider__slide-btn" href="error.html">Узнать больше</a>
+              </div>
+              <div class="slider__slide-img-block">
+                <img class="slider__slide-img" src="img/slide2.png" alt="Изображение второго слайда" width="663" height="430">
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__slide-content">
+                <h2 class="slider__slide-title">Только ночь, только хардкор</h2>
+                <p class="slider__slide-text">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
+                <a class="main-btn-link slider__slide-btn" href="error.html">Узнать больше</a>
+              </div>
+              <div class="slider__slide-img-block">
+                <img class="slider__slide-img" src="img/slide3.png" alt="Изображение третьего слайда" width="759" height="411">
+              </div>
+            </div>
+          </div>
+          <div class="slider__dots">
+            <span class="slider__dots-item" onclick="currentSlide(1)"></span>
+            <span class="slider__dots-item" onclick="currentSlide(2)"></span>
+            <span class="slider__dots-item" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-study container">
+    <section class="advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__img  advantages__img--sites"></div>
+          <h3 class="advantages__title">Веб-сайты</h3>
+          <p class="advantages__text">Мир никогда не будет прежним после того как увидит ваш сайт </p>
+          <a class="main-btn-link" href="error.html">Заказать</a>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__img  advantages__img--apps"></div>
+          <h3 class="advantages__title">Приложения</h3>
+          <p class="advantages__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="main-btn-link  main-btn-link--green" href="error.html">Заказать</a>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__img  advantages__img--presentations"></div>
+          <h3 class="advantages__title">Презентации</h3>
+          <p class="advantages__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="main-btn-link  main-btn-link--yellow" href="error.html">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <hr class="page-line">
+    <section class="studio">
+      <div class="studio__description">
+        <h2 class="studio__description-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p class="studio__description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h4 class="studio__description-list-title">Выполняем заказы на разработку:</h4>
+        <ul class="studio__description-list">
+          <li class="studio__description-item">Веб-сайтов любой сложности</li>
+          <li class="studio__description-item">Мобильных приложений для iOS и Android</li>
+          <li class="studio__description-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="studio__statistics">
+        <img class="studio__statistics-img" src="img/statistics-logo.jpg" alt="Дополнительный логотип Nerds" width="360" height="208">
+        <h3 class="studio__statistics-title">с 2004 года Любим точность во всем:</h3>
+        <table class="studio__statistics__table">
+          <tbody>
+            <tr class="studio__table-string">
+              <td class="studio__table-cell">
+                <span>146</span>
+                <sup>%</sup>
+              </td>
+              <td class="studio__table-cell">
+                <span>100</span>
+                <sup>%</sup>
+              </td>
+              <td class="studio__table-cell">
+                <span>50</span>
+                <sup>%</sup>
+              </td>
+            </tr>
+            <tr class="studio__table-string">
+              <td class="studio__table-cell  studio__table-cell--details">Уровень самоотдачи</td>
+              <td class="studio__table-cell  studio__table-cell--details">Соблюдение сроков</td>
+              <td class="studio__table-cell  studio__table-cell--details">Минимальная предоплата</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="partners">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <a class="partners__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">HTML-Academy</span>
+            <img class="partners__img" src="img/logo-html-academy.png" alt="" width="199" height="68">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="error.html">
+            <span class="visually-hidden">Barbershop</span>
+            <img class="partners__img" src="img/logo-barbershop.png" alt="" width="209" height="90">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="error.html">
+            <span class="visually-hidden">PINK</span>
+            <img class="partners__img" src="img/logo-pink.png" alt="" width="185" height="52">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="error.html">
+            <span class="visually-hidden">Mishka</span>
+            <img class="partners__img" src="img/logo-mishka.png" alt="" width="173" height="84">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__map  map">
+      <div class="map__interactive" id="map"></div>
+      <div class="map__wrapper">
+        <img class="map__img" src="img/map-img.jpg" alt="Nerds на карте" width="100%" height="420">
+        <div class="map__contacts">
+          <h3 class="map__contacts-title">NЁRDS Design Studio</h3>
+          <p class="map__contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <span class="map__contacts-tel">тел. +7 (812) 275-75-75</span>
+          <a class="main-btn-link">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__content">
+      <div class="container">
+        <div class="page-footer__socials">
+          <ul class="page-footer__list">
+            <li class="page-footer__item  focus">
+              <a class="page-footer__link" href="https://vk.com/">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="page-footer__icon page-footer__icon--vk" width="26" height="15">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="https://www.facebook.com/">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="page-footer__icon page-footer__icon--fb" width="12" height="22">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="https://www.instagram.com/">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="page-footer__icon page-footer__icon--insta" width="21" height="21">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__be-friends">
+          <h3 class="page-footer__title">Давайте дружить, это выгодно!</h3>
+          <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <h2 class="modal__title">Напишите нам</h2>
+    <form class="modal__form">
+      <div class="modal__wrapper">
+        <div class="modal__form-row  modal__form-row--name">
+          <label for="user-name">Ваше имя</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required="" autofocus="">
+        </div>
+        <div class="modal__form-row  modal__form-row--email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com" required="">
+        </div>
+      </div>
+      <div class="modal__form-row  modal__form-row--message">
+        <label for="contact-text">Текст письма:</label>
+        <textarea name="text" id="contact-text" cols="250" rows="5" placeholder="В свободной форме" required=""></textarea>
+      </div>
+      <button class="main-btn-link" type="submit">Отправить</button>
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </form>
+  </div>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=fcdc9923-8f87-4f28-af55-139686174cd3" type="text/javascript"></script>
+  <script src="js/ymap.js"></script>
+</body>
+
+</html>
