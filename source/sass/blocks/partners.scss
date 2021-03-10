@@ -1,0 +1,28 @@
+.partners {
+  padding: 40px 0;
+  border-top: 2px solid $smoky-white;
+  border-bottom: 2px solid $smoky-white;
+}
+
+.partners__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-gap: 80px;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.partners__item {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

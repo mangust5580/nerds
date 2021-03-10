@@ -1,0 +1,20 @@
+.page-header {
+  background-color: $smoky-white;
+}
+
+.page-header__top {
+  display: grid;
+  padding: 50px 0 0 0;
+  column-gap: 10px;
+
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.page-header__title {
+  padding: 50px 0 60px 0;
+  color: $black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}

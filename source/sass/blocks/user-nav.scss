@@ -1,0 +1,55 @@
+.user-nav {
+  padding: 24px 0;
+}
+
+.user-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  justify-content: flex-end;
+}
+
+.user-nav__item {
+  padding: 0 0 0 46px;
+
+  &:first-child {
+    padding: 0;
+  }
+}
+
+.user-nav__link {
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  &:hover {
+    color: $red-orange;
+  }
+
+  &:active {
+    color: $black;
+    opacity: 0.3;
+  }
+}
+
+.user-nav__link-basket {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/basket-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    transform: translateY(-50%);
+  }
+}
